@@ -1,13 +1,11 @@
-# POO_AsesoriasTI - Proyecto completo (demostración POO)
+# POO_AsesoriasTI - Solución con persistencia JSON
 
-Estructura: demo consola que aplica Encapsulamiento, Herencia, Abstracción y Polimorfismo.
-- .NET 8
-- Repositorio en memoria + export a JSON (bonus)
-- Pruebas con xUnit
+Proyecto de consola .NET 8 para gestionar asesorías (CRUD) con persistencia en `asesorias.json`.
 
 Ejecutar:
   dotnet build
   dotnet run --project src/POO_AsesoriasTI
 
-Tests:
-  dotnet test
+Notas:
+- Al iniciar, el repositorio carga `asesorias.json` si existe.
+- Cada vez que crea/modifica/elimina una asesoría, se guarda el archivo automáticamente.
